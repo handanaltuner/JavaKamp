@@ -1,14 +1,17 @@
+
+
+package kodlamaio.northwind.entities.conctretes;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import lombok.Data;
-@Data 
-package kodlamaio.northwind.entities.conctretes;
+//import lombok;
 
-@Entity
+
+@Entity//sen bir veritabanı nesnesinin
+
 @Table(name="products")
 public class Product {
 	
@@ -24,7 +27,7 @@ public class Product {
 	private String productName;
 	
 	@Column(name="unit_price")
-	private double unitPrice;
+	private double unitsPrice;
 	
 	@Column(name="units_in_stock")
 	private short unitsInStock;
@@ -34,13 +37,13 @@ public class Product {
 	
 	public Product() {}
 	
-	public Product(int id, int categoryId, String productName, double unitPrice, short unitsInStock,
+	public Product(int id, int categoryId, String productName, double unitsPrice, short unitsInStock,
 			String quantityPerUnit) {
 		super();
 		this.id = id;
 		this.categoryId = categoryId;
 		this.productName = productName;
-		this.unitPrice = unitPrice;
+		this.unitsPrice = unitsPrice;
 		this.unitsInStock = unitsInStock;
 		this.quantityPerUnit = quantityPerUnit;
 	}
@@ -63,10 +66,10 @@ public class Product {
 		this.productName = productName;
 	}
 	public double getUnitPrice() {
-		return unitPrice;
+		return unitsPrice;
 	}
 	public void setUnitPrice(double unitPrice) {
-		this.unitPrice = unitPrice;
+		this.unitsPrice = unitPrice;
 	}
 	public short getUnitsInStock() {
 		return unitsInStock;
