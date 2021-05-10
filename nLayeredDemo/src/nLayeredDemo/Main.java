@@ -13,7 +13,8 @@ public class Main {
 		// TODO Auto-generated method stub
 
 		//Todo : Sprint IoC ile çözülecek
-		ProductService productService = new ProductManager(new HibernateProductDao(), new  JLoggerManagerAdapter()); 
+		ProductService productService = new ProductManager(new HibernateProductDao(),
+				new  JLoggerManagerAdapter()); 
 			
 		Product product= new Product(1,1,"Elma",12,50);
 		productService.add(product);

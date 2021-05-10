@@ -1,13 +1,13 @@
 package nLayeredDemo.core;
 
-import jLogger.JLoggerManager;
+import jLogger.jLoggerManager;
 
 public class JLoggerManagerAdapter implements LoggerService{
 
 	@Override
 	public void logToSystem(String message) {
-		JLoggerManagerAdapter manager = new JLoggerManagerAdapter();
-		manager.logToSystem(message);
+		jLoggerManager manager = new jLoggerManager();
+		manager.log(message);
 		
 	}
 
