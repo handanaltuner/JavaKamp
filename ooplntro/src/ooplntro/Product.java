@@ -20,7 +20,7 @@ public class Product {
 		this.name = name;
 		this.unitPrice = unitPrice;
 		this.detail = detail;
-		this.discount= discount;
+		//this.discount= discount;
 	
 	}
 

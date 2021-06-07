@@ -1,6 +1,6 @@
 package inheritance2;
 
-public class Logger {
+public class SmsLogger {
 	public void log() {
 	}
 	
